@@ -22,13 +22,10 @@ const showSearchResults = docs => {
         div.classList.add('card');
         div.innerHTML = `<img src="https://covers.openlibrary.org/b/id/${key.cover_i}-M.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Author name:${key.author_name}</h5>
+            <p class="card-text">First Published: ${key.first_publish_year}</p>
         </div>
-        <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
+        
         `
         searchResult.appendChild(div);
     }
